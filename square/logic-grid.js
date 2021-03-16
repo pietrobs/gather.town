@@ -312,8 +312,14 @@ Game._drawHero = function () {
     else if (Keyboard.isDown(Keyboard.UP)) { diry = -1; }
     else if (Keyboard.isDown(Keyboard.DOWN)) { diry = 1; }
     else {
-        this.hero.renderPosition = 0;
+        if (this.hero.musicTile) {
+            console.log(this.hero.musicPlayer);
+            this.hero.direction = 12;
+        } else {
+            this.hero.renderPosition = 0;
+        }
     }
+
 
     this.ctx.drawImage(
         this.hero.image,
