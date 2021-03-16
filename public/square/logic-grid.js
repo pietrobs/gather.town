@@ -7,8 +7,8 @@ var map = {
     solids: [3, 5],
     musics: {
         0: null,
-        1: '../assets/musics/jazz.mp3',
-        2: '../assets/musics/ukelele.mp3',
+        1: './assets/musics/jazz.mp3',
+        2: './assets/musics/ukelele.mp3',
     },
     musicLayer: [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -211,8 +211,8 @@ Hero.prototype._collide = function (dirx, diry) {
 
 Game.load = function () {
     return [
-        Loader.loadImage('tiles', '../assets/tiles.png'),
-        Loader.loadImage('hero', '../assets/character.png')
+        Loader.loadImage('tiles', './assets/tiles.png'),
+        Loader.loadImage('hero', './assets/character.png')
     ];
 };
 
