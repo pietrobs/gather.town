@@ -1,0 +1,8 @@
+body {
+  font-family: "Source Code Pro", "Courier", monospace;
+  margin: 0;
+}
+
+canvas {
+  background: #000;
+}
